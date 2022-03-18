@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             <div className="col-9 p-0">
               <div className="row m-0">
                 <h3 className="text-white secondary-font  p-0">Hello! I{"'"}m</h3>
-                <h2 className="text-white main-font overflow-hidden mb-5  p-0">Pedro Fagundes</h2>
+                <h1 className="text-white main-font overflow-hidden mb-5  p-0">Pedro Fagundes</h1>
                 <p className='text-white-50 fs-2 m-0  p-0'>Fullstack Web Developer</p>
                 <p className='text-white-50 fs-4 mb-5  p-0'>I create websites and web applications for your projects!</p>
                 <Link href="/contact" passHref><div className="col-3 mt-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Get Resume </span><i className="fs-5 bi bi-download"></i></div></Link>
