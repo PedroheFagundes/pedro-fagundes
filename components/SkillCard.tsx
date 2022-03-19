@@ -5,7 +5,7 @@ const SkillCard = (props: { description: string, percentage: number }) => {
                 <div>{props.description}</div>
                 <div>{props.percentage}%</div>
             </div>
-            <div className="bg-standart2 h7 p-0 mt20">
+            <div className="bg-standart-light h7 p-0 mt20">
                 <div className={`bg-light h7 w${props.percentage}pc`}></div>
             </div>
         </div>

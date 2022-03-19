@@ -1,4 +1,4 @@
-const SectionHeader = (props: { tinyDesc: string, longDesc: string}) => {
+const SectionHeader = (props: { tinyDesc: string, longDesc: string }) => {
     return (
       <div className="row m-0">
         <div className="text-white-50 d-flex h30 align-item-center p-0">

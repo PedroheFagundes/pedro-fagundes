@@ -5,6 +5,8 @@ import ProjectCard from '../components/ProjectCard'
 import SectionHeader from '../components/SectionHeader'
 import ServiceCard from '../components/ServiceCard'
 import SkillCard from '../components/SkillCard'
+import SocialCard from '../components/socialCard'
+import TestimonialCard from '../components/TestimonialCard'
 
 
 const Home: NextPage = () => {
@@ -21,18 +23,34 @@ const Home: NextPage = () => {
               <div className="row m-0">
                 <h3 className="text-white secondary-font  p-0">Hello! I{"'"}m</h3>
                 <h1 className="text-white main-font overflow-hidden mb-5  p-0">Pedro Fagundes</h1>
-                <p className='text-white-50 fs-2 m-0  p-0'>Fullstack Web Developer</p>
-                <p className='text-white-50 fs-4 mb-5  p-0'>I create websites and web applications for your projects!</p>
-                <Link href="/contact" passHref><div className="col-3 mt-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Get Resume </span><i className="fs-5 bi bi-download"></i></div></Link>
+                <p className='text-white-50 fs-2 m-0 p-0'>Fullstack Web Developer</p>
+                <p className='text-white-50 fs-4 mb-5 p-0'>I create websites and web applications for your projects!</p>
+                <Link href="/contact" passHref>
+                  <div className="col-3 mt-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Get Resume </span><i className="fs-5 bi bi-download"></i></div></Link>
               </div>
             </div>
             <div className="col-3 d-flex align-items-center text-white-50">
               <div className="row text-end">
-                <Link href="https://www.linkedin.com/in/pedrofagundes/" passHref><a target="_blank" className='text-white-50'><i className="fs70 cursor hover-white bi bi-linkedin"></i></a></Link>
-                <Link href="https://github.com/PedroheFagundes" passHref><a target="_blank" className='text-white-50'><i className="fs70 cursor hover-white bi bi-github"></i></a></Link>
-                <Link href="/contact" passHref><i className="fs70 cursor hover-white bi bi-envelope-fill"></i></Link>
-                <Link href="https://twitter.com/pedrohefagundes" passHref><a target="_blank" className='text-white-50'><i className="fs70 cursor hover-white bi bi-twitter"></i></a></Link>
-                <Link href="https://www.instagram.com/pedrohefagundes/" passHref><a target="_blank" className='text-white-50'><i className="fs70 cursor hover-white bi bi-instagram"></i></a></Link>
+                <SocialCard
+                icon='linkedin'
+                  link='https://www.linkedin.com/in/pedrofagundes/'
+                  name='LinkedIn'
+                />
+                <SocialCard
+                  icon='github'
+                  link='https://github.com/PedroheFagundes'
+                  name='Github'
+                />
+                <SocialCard
+                  icon='envelope-fill'
+                  link='mailto:pedrohefagundes@gmail.com'
+                  name='E-Mail'
+                />
+                <SocialCard
+                  link='https://www.upwork.com/freelancers/~0189cabd19217d74f9'
+                  icon='code-slash'
+                  name='UpWork'
+                />
               </div>
             </div>
           </div>
@@ -41,7 +59,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* Services */}
-      <div className="bg-standart2 w100vw">
+      <div className="bg-standart-light w100vw">
         <div className='container-fluid align-items-center p-0 w1400'>
           <div className="h120"></div>
           <SectionHeader
@@ -108,7 +126,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* Skills */}
-      <div className="bg-standart2 w100vw">
+      <div className="bg-standart-light w100vw">
         <div className='container-fluid align-items-center p-0 w1400'>
           <div className="h120"></div>
           <div className="d-flex justify-content-between">
@@ -143,8 +161,77 @@ const Home: NextPage = () => {
       </div>
 
       {/* Counter */}
+      <div className="bg-standart-medium w100vw">
+        <div className='container-fluid align-items-center p-0 w1400'>
+          <CounterSection />
+        </div>
+      </div>
+
+      {/* Testimonials */}
       <div className='container-fluid align-items-center p-0 w1400'>
-        <CounterSection />
+        <div className="h120"></div>
+        <div className="d-flex justify-content-around">
+          <TestimonialCard
+            description='Lorem ipsum dolor sit amet. Offis iure esse possimus nobis sit officia voluptates, rem vero minus consectetur.'
+            name='Jhonny B. Good'
+            role='CEO'
+            company='B.Businness'
+          />
+          <div className='align-items-center column'>
+            <SectionHeader
+              tinyDesc="Testimonials"
+              longDesc="Satisfied Clients Say"
+            />
+            <TestimonialCard
+              description='Lorem ipsum dolor sit amet. Offis iure esse possimus nobis sit officia voluptates, rem vero minus consectetur.'
+              name='Jhonny B. Good'
+              role='CEO'
+              company='B.Businness'
+            />
+          </div>
+        </div>
+        <div className="h120"></div>
+      </div>
+
+      {/* Clients */}
+      <div className="bg-standart-light w100vw">
+        <div className='container-fluid align-items-center p-0 w1400'>
+        <div className="h120"></div>
+        <div className="column justify-content-center align-items-center">
+          <SectionHeader
+            tinyDesc="Stay in touch"
+            longDesc="Let's talk about a solution for you project!"
+          />
+          <Link href="/contact" passHref><div className="col-3 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Start Conversation </span><i className="bi bi-caret-right"></i></div></Link>
+        </div>
+        <div className="d-flex justify-content-center align-items-center text-white-50">
+          <SocialCard
+            link='https://www.linkedin.com/in/pedrofagundes/'
+            margin={5}
+            icon='linkedin'
+            name='LinkedIn'
+          />
+          <SocialCard
+            link='https://github.com/PedroheFagundes'
+            margin={5}
+            icon='github'
+            name='Github'
+          />
+          <SocialCard
+            link='mailto:pedrohefagundes@gmail.com'
+            margin={5}
+            icon='envelope-fill'
+            name='E-Mail'
+          />
+          <SocialCard
+            link='https://www.upwork.com/freelancers/~0189cabd19217d74f9'
+            margin={5}
+            icon='code-slash'
+            name='UpWork'
+          />
+        </div>
+        <div className="h30"></div>
+        </div>
       </div>
     </>
   )
