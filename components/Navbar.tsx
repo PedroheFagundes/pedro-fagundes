@@ -52,6 +52,8 @@ const Navbar = () => {
         <Link href="/contact" passHref><div onClick={() => setPage(("Contact"))} className='cursor hover-white hover-bg-string h70 d-flex align-items-center justify-content-center'>Contact</div></Link>
         <Link href="/about" passHref><div onClick={() => setPage(("About Me"))} className='cursor hover-white hover-bg-string h70 d-flex align-items-center justify-content-center'>About Me</div></Link>
         <Link href="/contact" passHref><div onClick={() => setPage(("Contact"))} className="cursor d-flex align-items-center justify-content-center"><span className='px-5 text-white btn btn-outline-secondary rounded-pill fw-bold fs-1'> Hire Me <i className="bi bi-caret-right"></i></span></div></Link>
+        <div className="h30"></div>
+        
       </div> : null}
     </div>
   )
