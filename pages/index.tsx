@@ -1,3 +1,4 @@
+import React from "react";
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import CounterSection from '../components/CounterSection'
@@ -7,15 +8,29 @@ import ServiceCard from '../components/ServiceCard'
 import SkillCard from '../components/SkillCard'
 import SocialCard from '../components/socialCard'
 import TestimonialCard from '../components/TestimonialCard'
+import { saveAs } from "file-saver";
 
+function resumeDownload() {
+  const saveFile = () => {
+    saveAs(
+      "/pedro-fagundes-resume.pdf",
+      "Pedro-Fagundes-esume.pdf"
+    );
+  };
+  return (
+    <div className="col-3 mt-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center" onClick={saveFile}>
+      <span className='pe-2'> Get Resume </span>
+      <i className="fs-5 bi bi-download"></i>
+    </div>
+  );
+}
 
 const Home: NextPage = () => {
-
 
   return (
     <>
     {/* Home */}
-      <div className='container-fluid h100vh align-items-center p-0 w1400'>
+      <div className='container-fluid h100vh align-items-center p-0 col-xl-10'>
         <div className="h120"></div>
         <div className='text-white home-cover d-flex align-items-center justify-content-around'>
           <div className="row m-0">
@@ -25,8 +40,7 @@ const Home: NextPage = () => {
                 <h1 className="text-white main-font overflow-hidden mb-5  p-0">Pedro Fagundes</h1>
                 <p className='text-white-50 fs-2 m-0 p-0'>Fullstack Web Developer</p>
                 <p className='text-white-50 fs-4 mb-5 p-0'>I create websites and web applications for your projects!</p>
-                <Link href="/contact" passHref>
-                  <div className="col-3 mt-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Get Resume </span><i className="fs-5 bi bi-download"></i></div></Link>
+                {resumeDownload()}
               </div>
             </div>
             <div className="col-3 d-flex align-items-center text-white-50">
@@ -72,27 +86,27 @@ const Home: NextPage = () => {
               title='Landing Page'
               desc1='Home Page'
               desc2='Contact Form'
-              desc3='Blabla'
-              desc4='Home Page'
-              desc5='Home Page'
+              desc3='Content Pages'
+              desc4='Clean Design'
+              desc5='Good SEO'
             />
             <ServiceCard
               icon='bi-calendar-check'
               title='Self-scheduling System'
-              desc1='Home Page'
-              desc2='Contact Form'
-              desc3='Blabla'
-              desc4='Home Page'
-              desc5='Home Page'
+              desc1='Great client experience'
+              desc2='Easy online schedule'
+              desc3='Online services managment'
+              desc4='Good SEO'
+              desc5='Time saver'
             />
             <ServiceCard
               icon='bi-bag-check'
-              title='E-Commerce Page'
+              title='Online Menu'
               desc1='Home Page'
-              desc2='Contact Form'
-              desc3='Blabla'
-              desc4='Home Page'
-              desc5='Home Page'
+              desc2='Easy browsing'
+              desc3='Great Client Experience'
+              desc4='Fast content management'
+              desc5='Time saver'
             />
           </div>
           <div className="d-flex justify-content-center m-5">
@@ -130,12 +144,16 @@ const Home: NextPage = () => {
         <div className='container-fluid align-items-center p-0 w1400'>
           <div className="h120"></div>
           <div className="d-flex justify-content-between">
-            <div className='col-5 row align-items-center m-0 p-0'>
+            <div className="col-7 row align-items-center m-0 p-0">
+            <div className='col-8'>
               <SectionHeader
               tinyDesc="Special Skills"
               longDesc="My Special Skill Field Here"
               />
-              <Link href="/contact" passHref><div className="col-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Get Resume </span><i className="fs-5 bi bi-download"></i></div></Link>
+              </div>
+            <div className='col-12'>
+              {resumeDownload()}
+            </div>
             </div>
             <div className='text-white col-6'>
               <SkillCard
@@ -146,7 +164,7 @@ const Home: NextPage = () => {
                 description='Leadership'
                 percentage={70}
               />
-                            <SkillCard
+              <SkillCard
                 description='Problem Solving'
                 percentage={90}
               />
@@ -168,7 +186,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* Testimonials */}
-      <div className='container-fluid align-items-center p-0 w1400'>
+      {/* <div className='container-fluid align-items-center p-0 w1400'>
         <div className="h120"></div>
         <div className="d-flex justify-content-around">
           <TestimonialCard
@@ -191,7 +209,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="h120"></div>
-      </div>
+      </div> */}
 
       {/* Clients */}
       <div className="bg-standart-light w100vw">
