@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Desktop */}
         <div className='col-lg-6 col-xl-5 text-white-50 fs-5'>
           <div id='nav-bar-options' className="row">
-            <Link href="/" passHref><div className='cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Home</div></Link>
+            <Link href="/" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Home</div></Link>
             <Link href="/services" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Services</div></Link>
             <Link href="/projects" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Projects</div></Link>
             <Link href="/contact" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Contact</div></Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div id='nav-bar-burguer-menu' onClick={() => toggleNavBar()} className='col-md-3 m-0 w70 h70 d-flex row justify-content-between'><div className='bg-white h17 rounded'></div><div className='bg-white h17 rounded'></div><div className='bg-white h17 rounded'></div></div>
       </div>
       {openedNavBar?
-      <div className='col-md-12 col-lg-6 col-xl-5 text-white-50 fs-1'>
+      <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 text-white-50 fs-1'>
         <Link href="/" passHref><div onClick={() => setPage(("Home"))} className='col cursor hover-white hover-bg-string h70 d-flex align-items-center justify-content-center'>Home</div></Link>
         <Link href="/services" passHref><div onClick={() => setPage(("Services"))} className='cursor hover-white hover-bg-string h70 d-flex align-items-center justify-content-center'>Services</div></Link>
         <Link href="/projects" passHref><div onClick={() => setPage(("Projects"))} className='cursor hover-white hover-bg-string h70 d-flex align-items-center justify-content-center'>Projects</div></Link>
