@@ -325,7 +325,7 @@ body a {
 
 /* Especifics index.tsx */
 .home-cover {
-  height: calc(100vh - 220px);
+  /* height: calc(100vh - 220px); */
   min-height: 550px;
   background-image: url("/logo.png");
   background-repeat: no-repeat;

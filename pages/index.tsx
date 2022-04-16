@@ -32,7 +32,7 @@ const Home: NextPage = () => {
     {/* Home */}
       <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-11 col-xl-10'>
         <div className="h120"></div>
-        <div className='text-white home-cover d-flex align-items-center justify-content-around'>
+        <div className='text-white home-cover d-flex align-items-center'>
           <div className="row m-0">
             <div className="col-md-12 col-lg-10 p-0">
               <div className="row m-0">
