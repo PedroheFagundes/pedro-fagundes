@@ -25,10 +25,10 @@ const Services: NextPage = () => {
             />
             <ServiceCard
               icon='bi-calendar-check'
-              title='Self-scheduling System'
+              title='Scheduling System'
               desc1='Great client experience'
               desc2='Easy online schedule'
-              desc3='Online services managment'
+              desc3='Services management'
               desc4='Good SEO'
               desc5='Time saver'
             />

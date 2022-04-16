@@ -95,14 +95,14 @@ const Home: NextPage = () => {
       </div>
 
       {/* Services */}
-      <div className="bg-standart-light w100vw">
-        <div className='container-fluid align-items-center p-0 w1400'>
+      <div className="bg-standart-light">
+        <div className='container-fluid align-items-center p-0 col-md-10 col-lg-10 col-xl-11'>
           <div className="h120"></div>
           <SectionHeader
             tinyDesc="My Services"
             longDesc="Service Provide For My Clients"
           />
-          <div className="d-flex justify-content-around">
+          <div className="d-flex row justify-content-between align-items-center">
             <ServiceCard
               icon='bi-blockquote-left'
               title='Landing Page'
@@ -114,10 +114,10 @@ const Home: NextPage = () => {
             />
             <ServiceCard
               icon='bi-calendar-check'
-              title='Self-scheduling System'
+              title='Scheduling System'
               desc1='Great client experience'
               desc2='Easy online schedule'
-              desc3='Online services managment'
+              desc3='Services management'
               desc4='Good SEO'
               desc5='Time saver'
             />

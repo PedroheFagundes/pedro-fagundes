@@ -206,7 +206,7 @@ body a {
 }
 
 .p70 {
-  padding: 70px;
+  padding: 70px !important;
 }
 
 .padding-icon {
@@ -407,4 +407,5 @@ body a {
     display: none !important;
   }
 }
+
 
