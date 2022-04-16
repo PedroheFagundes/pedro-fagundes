@@ -18,9 +18,9 @@ function resumeDownload() {
     );
   };
   return (
-    <div className="col-3 mt-5 cursor text-white btn btn-outline-secondary rounded-pill p-4 fs-5 d-flex align-items-center justify-content-center" onClick={saveFile}>
-      <span className='pe-2'> Get Resume </span>
-      <i className="fs-5 bi bi-download"></i>
+    <div className=" mt-5 cursor  d-flex align-items-center justify-content-center" onClick={saveFile}>
+      <span className='col-md-5 col-lg-4 p-4 btn btn-outline-secondary rounded-pill text-white fs-3 fw-bold'> Get Resume <i className="px-1 fs-5 bi bi-download"></i> </span>
+      
     </div>
   );
 }
@@ -30,21 +30,21 @@ const Home: NextPage = () => {
   return (
     <>
     {/* Home */}
-      <div className='container-fluid h100vh align-items-center p-0 col-xl-10'>
+      <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-11 col-xl-10'>
         <div className="h120"></div>
         <div className='text-white home-cover d-flex align-items-center justify-content-around'>
           <div className="row m-0">
-            <div className="col-9 p-0">
+            <div className="col-md-12 col-lg-10 p-0">
               <div className="row m-0">
-                <h3 className="text-white secondary-font  p-0">Hello! I{"'"}m</h3>
-                <h1 className="text-white main-font overflow-hidden mb-5  p-0">Pedro Fagundes</h1>
+                <h3 id="home-hello" className="text-white secondary-font p-0">Hello! I{"'"}m</h3>
+                <h1 id='home-name' className="text-white main-font overflow-hidden mb-5 p-0">Pedro Fagundes</h1>
                 <p className='text-white-50 fs-2 m-0 p-0'>Fullstack Web Developer</p>
                 <p className='text-white-50 fs-4 mb-5 p-0'>I create websites and web applications for your projects!</p>
                 {resumeDownload()}
               </div>
             </div>
-            <div className="col-3 d-flex align-items-center text-white-50">
-              <div className="row text-end">
+            <div className="col-md-12 col-lg-2 d-flex align-items-center text-white-50 pt-5">
+              <div id="home-socials" className="col-12 col-sm-12 col-md-12 d-flex align-items-center justify-content-around">
                 <SocialCard
                 icon='linkedin'
                   link='https://www.linkedin.com/in/pedrofagundes/'

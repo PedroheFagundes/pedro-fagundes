@@ -361,6 +361,16 @@ body a {
 }
 
 /* @medias */
+@media (max-width: 767px) {
+  #home-hello {
+    font-size: 65px;
+  }
+
+  #home-name {
+    font-size: 80px;
+  }
+}
+
 @media (max-width: 991px) {
   #nav-bar-hire-me {
     display: none !important;
@@ -387,6 +397,13 @@ body a {
   
   #nav-bar-selected {
     display: none !important;
+  }
+
+  #home-socials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    max-width: 100% !important;
   }
 }
 

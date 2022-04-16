@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link href="/services" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Services</div></Link>
             <Link href="/projects" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Projects</div></Link>
             <Link href="/contact" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>Contact</div></Link>
-            <Link href="/about" passHref><div className='col-lg-3 col-xl-3 cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>About Me</div></Link>
+            <Link href="/about" passHref><div className='col cursor hover-white hover-bg-string h120 d-flex align-items-center justify-content-center'>About</div></Link>
           </div>
         </div>
         <Link href="/contact" passHref><div id="nav-bar-hire-me" className="col-2 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Hire Me </span><i className="bi bi-caret-right"></i></div></Link>
