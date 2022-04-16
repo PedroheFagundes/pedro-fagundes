@@ -57,6 +57,10 @@ body a {
   height: 7px;
 }
 
+.h10 {
+  height: 10px;
+}
+
 .h17 {
   height: 17px;
 }
@@ -67,6 +71,10 @@ body a {
 
 .h30 {
   height: 30px;
+}
+
+.h40 {
+  height: 40px;
 }
 
 .h70 {
@@ -110,6 +118,11 @@ body a {
 }
 
 /* Widths */
+.w40 {
+  width: 40px;
+  max-width: 40px;
+}
+
 .w70 {
   width: 70px;
   max-width: 70px;
@@ -343,8 +356,14 @@ body a {
   #nav-bar-hire-me {
     display: none !important;
   }
+
   #nav-bar-options {
     display: none !important;
+  }
+
+  #nav-bar-logo {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -352,6 +371,7 @@ body a {
   #nav-bar-burguer-menu {
     display: none !important;
   }
+  
   #nav-bar-selected {
     display: none !important;
   }
