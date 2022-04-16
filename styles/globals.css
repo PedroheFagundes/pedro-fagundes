@@ -372,6 +372,10 @@ body a {
 }
 
 @media (max-width: 991px) {
+  #home-socials-desktop {
+    display: none !important;
+  }
+
   #nav-bar-hire-me {
     display: none !important;
   }
@@ -389,8 +393,8 @@ body a {
     height: 80px !important;
   }
   
-  #home-socials-desktop {
-    display: none !important;
+  #section-header-long-desc {
+    font-size: 55px;
   }
 }
 
@@ -408,4 +412,9 @@ body a {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  #section-header-long-desc {
+    font-size: 63px;
+  }
+}
 

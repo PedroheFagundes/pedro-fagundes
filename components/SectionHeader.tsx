@@ -5,7 +5,7 @@ const SectionHeader = (props: { tinyDesc: string, longDesc: string }) => {
           <div className="me-3">| |</div>
           <div className="">{props.tinyDesc}</div>
         </div>
-        <div className="fs70 cormorant bold text-white mt-3 mb-5 p-0">{props.longDesc}</div>
+        <div id="section-header-long-desc" className="fs70 cormorant bold text-white mt-3 mb-5 p-0">{props.longDesc}</div>
       </div>
     )
   }
