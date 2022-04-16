@@ -77,6 +77,10 @@ body a {
   height: 40px;
 }
 
+.h60 {
+  height: 60px;
+}
+
 .h70 {
   height: 70px;
 }
@@ -121,6 +125,11 @@ body a {
 .w40 {
   width: 40px;
   max-width: 40px;
+}
+
+.w60 {
+  width: 60px;
+  max-width: 60px;
 }
 
 .w70 {
@@ -362,8 +371,12 @@ body a {
   }
 
   #nav-bar-logo {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  #nav-bar-height {
+    height: 80px !important;
   }
 }
 

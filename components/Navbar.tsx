@@ -19,16 +19,17 @@ const Navbar = () => {
 
   return (
     <div className="bg-standart navbar fixed-top p-0">
-      <div className="container-fluid d-flex justify-content-between h120 align-items-center text-centerp-0 col-11 col-sm-11 col-md-11 col-lg-11 col-xl-10">
+      <div id='nav-bar-height' className="container-fluid d-flex justify-content-between h120 align-items-center text-centerp-0 col-11 col-sm-11 col-md-11 col-lg-11 col-xl-10">
         <Link href="/" passHref>
-          <Image
-            src={logo}
-            id='nav-bar-logo'
-            className='col-md-3 text-white cursor img-white'
-            alt="monogram"
-            width={60}
-            height={60}
-          />
+          <div id='nav-bar-logo' className="position-relative w60 h60">
+            <Image
+              src={logo}
+              className='col-md-3 text-white cursor img-white'
+              alt="monogram"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </Link>
         {/* Desktop */}
         <div className='col-lg-6 col-xl-5 text-white-50 fs-5'>
@@ -43,7 +44,7 @@ const Navbar = () => {
         <Link href="/contact" passHref><div id="nav-bar-hire-me" className="col-2 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Hire Me </span><i className="bi bi-caret-right"></i></div></Link>
         {/* Mobile */}
         <div id='nav-bar-selected' className='col p-0 fs-1 text-white d-flex align-items-center justify-content-center'>{chosenPage}</div>
-        <div id='nav-bar-burguer-menu' onClick={() => toggleNavBar()} className='col-md-3 m-0 w40 h40 d-flex row justify-content-between'><div className='bg-white h10 rounded'></div><div className='bg-white h10 rounded'></div><div className='bg-white h10 rounded'></div></div>
+        <div id='nav-bar-burguer-menu' onClick={() => toggleNavBar()} className='col-md-3 m-0 w40 h40 d-flex row justify-content-between'><div className='bg-white h7 rounded'></div><div className='bg-white h7 rounded'></div><div className='bg-white h7 rounded'></div></div>
       </div>
       {openedNavBar?
       <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 text-white-50 fs-1'>
