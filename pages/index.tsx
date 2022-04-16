@@ -18,7 +18,7 @@ function resumeDownload() {
     );
   };
   return (
-    <div className=" mt-5 cursor  d-flex align-items-center justify-content-center" onClick={saveFile}>
+    <div className=" mt-5 cursor d-flex justify-content-start" onClick={saveFile}>
       <span className='col-md-5 col-lg-4 p-4 btn btn-outline-secondary rounded-pill text-white fs-3 fw-bold'> Get Resume <i className="px-1 fs-5 bi bi-download"></i> </span>
       
     </div>
@@ -44,7 +44,29 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="col-md-12 col-lg-2 d-flex align-items-center text-white-50 pt-5">
-              <div id="home-socials" className="col-12 col-sm-12 col-md-12 d-flex align-items-center justify-content-around">
+              <div id="home-socials-desktop" className="row col-12 col-sm-12 col-md-12 d-flex align-items-center justify-content-around">
+                <SocialCard
+                icon='linkedin'
+                  link='https://www.linkedin.com/in/pedrofagundes/'
+                  name='LinkedIn'
+                />
+                <SocialCard
+                  icon='github'
+                  link='https://github.com/PedroheFagundes'
+                  name='Github'
+                />
+                <SocialCard
+                  icon='envelope-fill'
+                  link='mailto:pedrohefagundes@gmail.com'
+                  name='E-Mail'
+                />
+                <SocialCard
+                  link='https://www.upwork.com/freelancers/~0189cabd19217d74f9'
+                  icon='code-slash'
+                  name='UpWork'
+                />
+              </div>
+              <div id="home-socials-mobile" className="col-12 col-sm-12 col-md-12 d-flex align-items-center justify-content-around">
                 <SocialCard
                 icon='linkedin'
                   link='https://www.linkedin.com/in/pedrofagundes/'

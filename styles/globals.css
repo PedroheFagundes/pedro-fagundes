@@ -388,6 +388,10 @@ body a {
   #nav-bar-height {
     height: 80px !important;
   }
+  
+  #home-socials-desktop {
+    display: none !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -399,11 +403,8 @@ body a {
     display: none !important;
   }
 
-  #home-socials {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row !important;
-    max-width: 100% !important;
+  #home-socials-mobile {
+    display: none !important;
   }
 }
 
