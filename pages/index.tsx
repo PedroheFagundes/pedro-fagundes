@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard'
 import SectionHeader from '../components/SectionHeader'
 import ServiceCard from '../components/ServiceCard'
 import SkillCard from '../components/SkillCard'
-import SocialCard from '../components/socialCard'
+import SocialCard from '../components/SocialCard'
 import TestimonialCard from '../components/TestimonialCard'
 import { saveAs } from "file-saver";
 
@@ -96,13 +96,13 @@ const Home: NextPage = () => {
 
       {/* Services */}
       <div className="bg-standart-light">
-        <div className='container-fluid align-items-center p-0 col-md-10 col-lg-10 col-xl-11'>
+        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-11'>
           <div className="h120"></div>
           <SectionHeader
             tinyDesc="My Services"
             longDesc="Service Provide For My Clients"
           />
-          <div className="d-flex row justify-content-between align-items-center">
+          <div id="services-card-container" className="d-flex m-0 col-12 row justify-content-between align-items-center">
             <ServiceCard
               icon='bi-blockquote-left'
               title='Landing Page'
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
             />
           </div>
           <div className="d-flex justify-content-center m-5">
-            <Link href="/services" passHref><div className="col-2 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span>All Services</span></div></Link>
+            <Link href="/services" passHref><div className="col-8 col-sm-6 col-md-5 scol-lg-4 col-xl-3 col-xxl-2 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span>All Services</span></div></Link>
           </div>
         </div>
       </div>
