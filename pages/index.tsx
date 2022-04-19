@@ -8,7 +8,7 @@ import ServiceCard from '../components/ServiceCard'
 import SkillCard from '../components/SkillCard'
 import TestimonialCard from '../components/TestimonialCard'
 import { saveAs } from "file-saver";
-import SocialCard from "../components/teste";
+import SocialCard from "../components/SocialCard";
 
 function resumeDownload() {
   const saveFile = () => {
