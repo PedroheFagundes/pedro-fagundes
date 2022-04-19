@@ -6,9 +6,9 @@ import ProjectCard from '../components/ProjectCard'
 import SectionHeader from '../components/SectionHeader'
 import ServiceCard from '../components/ServiceCard'
 import SkillCard from '../components/SkillCard'
-import SocialCard from '../components/SocialCard'
 import TestimonialCard from '../components/TestimonialCard'
 import { saveAs } from "file-saver";
+import SocialCard from "../components/SocialCard";
 
 function resumeDownload() {
   const saveFile = () => {
