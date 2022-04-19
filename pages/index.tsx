@@ -96,7 +96,7 @@ const Home: NextPage = () => {
 
       {/* Services */}
       <div className="bg-standart-light">
-        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-11'>
+        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-11 col-xxl-10'>
           <div className="h120"></div>
           <SectionHeader
             tinyDesc="My Services"
@@ -138,13 +138,13 @@ const Home: NextPage = () => {
       </div>
 
       {/* Projects */}
-      <div className='container-fluid align-items-center p-0 w1400'>
+      <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
         <div className="h120"></div>
         <SectionHeader
           tinyDesc="Awesome Portfolio"
           longDesc="My Complete Projects"
         />
-        <div className="d-flex justify-content-around">
+        <div className="d-flex justify-content-around row">
           <ProjectCard
             linkTo='projects'
             imgName='roller-calc'
@@ -158,6 +158,9 @@ const Home: NextPage = () => {
             title='Preço Campeão - the best market sales!'
           />
         </div>
+        <div className="d-flex justify-content-center m-5">
+            <Link href="/projects" passHref><div className="col-8 col-sm-6 col-md-5 scol-lg-4 col-xl-3 col-xxl-2 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span>All Projects</span></div></Link>
+          </div>
         <div className="h120"></div>
       </div>
 
