@@ -19,7 +19,7 @@ function resumeDownload() {
   };
   return (
     <div className=" mt-5 cursor d-flex justify-content-start" onClick={saveFile}>
-      <span className='col-md-5 col-lg-4 p-4 btn btn-outline-secondary rounded-pill text-white fs-3 fw-bold'> Get Resume <i className="px-1 fs-5 bi bi-download"></i> </span>
+      <span className='col-9 col-sm-9 col-md-8 col-lg-7 col-xl-6 col-xxl-5 p-4 btn btn-outline-secondary rounded-pill text-white fs-3 fw-bold'> Get Resume <i className="px-1 fs-5 bi bi-download"></i> </span>
       
     </div>
   );
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <>
     {/* Home */}
-      <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-11 col-xl-10'>
+      <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
         <div className="h120"></div>
         <div className='text-white home-cover d-flex align-items-center'>
           <div className="row m-0">
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
 
       {/* Services */}
       <div className="bg-standart-light">
-        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-11 col-xxl-10'>
+        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
           <div className="h120"></div>
           <SectionHeader
             tinyDesc="My Services"
@@ -165,22 +165,22 @@ const Home: NextPage = () => {
       </div>
 
       {/* Skills */}
-      <div className="bg-standart-light w100vw">
-        <div className='container-fluid align-items-center p-0 w1400'>
+      <div className="bg-standart-light">
+        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
           <div className="h120"></div>
-          <div className="d-flex justify-content-between">
-            <div className="col-7 row align-items-center m-0 p-0">
-            <div className='col-8'>
-              <SectionHeader
-              tinyDesc="Special Skills"
-              longDesc="My Special Skill Field Here"
-              />
+          <div id="skills-column" className="d-flex justify-content-between">
+            <div className="col-12 col-xl-7 col-xxl-7 row align-items-center m-0 p-0">
+              <div className='col-12'>
+                <SectionHeader
+                tinyDesc="Special Skills"
+                longDesc="My Special Skill Field Here"
+                />
+                </div>
+              <div className='col-10 col-sm-9 col-md-8 col-lg-7 col-xl-12 col-xxl-12'>
+                {resumeDownload()}
               </div>
-            <div className='col-12'>
-              {resumeDownload()}
             </div>
-            </div>
-            <div className='text-white col-6'>
+            <div className='text-white col-12 col-sm-11 col-md-10 col-lg-8 col-xl-5 col-xxl-5 d-flex flex-column align-items-end mt-5'>
               <SkillCard
                 description='Communication'
                 percentage={75}
@@ -204,8 +204,8 @@ const Home: NextPage = () => {
       </div>
 
       {/* Counter */}
-      <div className="bg-standart-medium w100vw">
-        <div className='container-fluid align-items-center p-0 w1400'>
+      <div className="bg-standart-medium">
+        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
           <CounterSection />
         </div>
       </div>
@@ -237,38 +237,38 @@ const Home: NextPage = () => {
       </div> */}
 
       {/* Clients */}
-      <div className="bg-standart-light w100vw">
-        <div className='container-fluid align-items-center p-0 w1400'>
+      <div className="bg-standart-light">
+        <div className='d-flex column align-items-center container-fluid p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
         <div className="h120"></div>
         <div className="column justify-content-center align-items-center">
           <SectionHeader
             tinyDesc="Stay in touch"
             longDesc="Let's talk about a solution for you project!"
           />
-          <Link href="/contact" passHref><div className="col-3 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Start Conversation </span><i className="bi bi-caret-right"></i></div></Link>
+          <Link href="/contact" passHref><div className="col-xxl-3 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Start Conversation </span><i className="bi bi-caret-right"></i></div></Link>
         </div>
-        <div className="d-flex justify-content-center align-items-center text-white-50">
+        <div className="col-11 col-sm-10 col-md-9 col-lg-9 col-xl-8 col-xxl-8 d-flex justify-content-around align-items-center text-white-50 mt-2">
           <SocialCard
             link='https://www.linkedin.com/in/pedrofagundes/'
-            margin={5}
+            margin={2}
             icon='linkedin'
             name='LinkedIn'
           />
           <SocialCard
             link='https://github.com/PedroheFagundes'
-            margin={5}
+            margin={2}
             icon='github'
             name='Github'
           />
           <SocialCard
             link='mailto:pedrohefagundes@gmail.com'
-            margin={5}
+            margin={2}
             icon='envelope-fill'
             name='E-Mail'
           />
           <SocialCard
             link='https://www.upwork.com/freelancers/~0189cabd19217d74f9'
-            margin={5}
+            margin={2}
             icon='code-slash'
             name='UpWork'
           />

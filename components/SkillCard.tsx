@@ -1,6 +1,6 @@
 const SkillCard = (props: { description: string, percentage: number }) => {
     return (
-        <div className="w550 h150 bg-standart p45 d-flex mb-4 row">
+        <div className=" h150 bg-standart p45 d-flex mb-4 col-12 row">
             <div className={`p-0 d-flex justify-content-between text-white-50 w${props.percentage}pc`}>
                 <div>{props.description}</div>
                 <div>{props.percentage}%</div>

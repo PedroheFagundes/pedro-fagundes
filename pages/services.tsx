@@ -6,14 +6,14 @@ import ServiceCard from '../components/ServiceCard'
 const Services: NextPage = () => {
   return (
     <>
-        <div className="bg-standart-light w100vw">
-        <div className='container-fluid align-items-center p-0 w1400'>
+        <div className="bg-standart-light">
+        <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
           <div className="h150"></div>
           <SectionHeader
             tinyDesc="My Services"
             longDesc="Service Provide For My Clients"
           />
-          <div className="d-flex justify-content-around">
+          <div id="services-card-container" className="d-flex m-0 col-12 row justify-content-between align-items-center">
             <ServiceCard
               icon='bi-blockquote-left'
               title='Landing Page'

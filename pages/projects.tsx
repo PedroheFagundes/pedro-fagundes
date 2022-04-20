@@ -4,13 +4,13 @@ import SectionHeader from '../components/SectionHeader'
 
 const Projects: NextPage = () => {
   return (
-    <div className='container-fluid align-items-center p-0 w1400'>
+    <div className='container-fluid align-items-center p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
     <div className="h150"></div>
     <SectionHeader
       tinyDesc="Awesome Portfolio"
       longDesc="My Complete Projects"
     />
-    <div className="d-flex justify-content-around">
+    <div className="d-flex justify-content-around row">
       <ProjectCard
         linkTo='projects'
         imgName='roller-calc'
