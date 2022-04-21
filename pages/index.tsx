@@ -146,13 +146,13 @@ const Home: NextPage = () => {
         />
         <div className="d-flex justify-content-around row">
           <ProjectCard
-            linkTo='projects'
+            linkTo='/projects'
             imgName='roller-calc'
             imgAlt='Rollercalc website'
             title='RollerCalc - a RollerCoin calculator'
           />
           <ProjectCard
-            linkTo='projects'
+            linkTo='/projects'
             imgName='preco-campeao'
             imgAlt='Preço Campeão website'
             title='Preço Campeão - the best market sales!'
@@ -236,44 +236,44 @@ const Home: NextPage = () => {
         <div className="h120"></div>
       </div> */}
 
-      {/* Clients */}
+      {/* Contact */}
       <div className="bg-standart-light">
         <div className='d-flex column align-items-center container-fluid p-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10 col-xxl-10'>
-        <div className="h120"></div>
-        <div className="column justify-content-center align-items-center">
-          <SectionHeader
-            tinyDesc="Stay in touch"
-            longDesc="Let's talk about a solution for you project!"
-          />
-          <Link href="/contact" passHref><div className="col-xxl-3 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Start Conversation </span><i className="bi bi-caret-right"></i></div></Link>
-        </div>
-        <div className="col-11 col-sm-10 col-md-9 col-lg-9 col-xl-8 col-xxl-8 d-flex justify-content-around align-items-center text-white-50 mt-2">
-          <SocialCard
-            link='https://www.linkedin.com/in/pedrofagundes/'
-            margin={2}
-            icon='linkedin'
-            name='LinkedIn'
-          />
-          <SocialCard
-            link='https://github.com/PedroheFagundes'
-            margin={2}
-            icon='github'
-            name='Github'
-          />
-          <SocialCard
-            link='mailto:pedrohefagundes@gmail.com'
-            margin={2}
-            icon='envelope-fill'
-            name='E-Mail'
-          />
-          <SocialCard
-            link='https://www.upwork.com/freelancers/~0189cabd19217d74f9'
-            margin={2}
-            icon='code-slash'
-            name='UpWork'
-          />
-        </div>
-        <div className="h30"></div>
+          <div className="h120"></div>
+          <div className="column justify-content-center align-items-center">
+            <SectionHeader
+              tinyDesc="Stay in touch"
+              longDesc="Let's talk about a solution for you project!"
+            />
+            <Link href="/contact" passHref><div className="col-xxl-3 cursor text-white btn btn-outline-secondary rounded-pill p-3 fw-bold fs-5 d-flex align-items-center justify-content-center"><span className='pe-2'> Start Conversation </span><i className="bi bi-caret-right"></i></div></Link>
+          </div>
+          <div className="col-11 col-sm-10 col-md-9 col-lg-9 col-xl-8 col-xxl-8 d-flex justify-content-around align-items-center text-white-50 mt-2">
+            <SocialCard
+              link='https://www.linkedin.com/in/pedrofagundes/'
+              margin={2}
+              icon='linkedin'
+              name='LinkedIn'
+            />
+            <SocialCard
+              link='https://github.com/PedroheFagundes'
+              margin={2}
+              icon='github'
+              name='Github'
+            />
+            <SocialCard
+              link='mailto:pedrohefagundes@gmail.com'
+              margin={2}
+              icon='envelope-fill'
+              name='E-Mail'
+            />
+            <SocialCard
+              link='https://www.upwork.com/freelancers/~0189cabd19217d74f9'
+              margin={2}
+              icon='code-slash'
+              name='UpWork'
+            />
+          </div>
+          <div className="h30"></div>
         </div>
       </div>
     </>

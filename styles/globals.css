@@ -25,6 +25,12 @@ body a {
   text-decoration: none;
 }
 
+input, textarea {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
 /* End of Scrollbar */
 
 /* width */
@@ -292,6 +298,10 @@ body a {
 
 .bg-standart-dark {
   background-color: #1f2029;
+}
+
+.bg-input-light {
+  background-color: #e0e1e7;
 }
 
 /* Cursor */

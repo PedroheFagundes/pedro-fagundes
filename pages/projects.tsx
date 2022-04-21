@@ -12,13 +12,13 @@ const Projects: NextPage = () => {
     />
     <div className="d-flex justify-content-around row">
       <ProjectCard
-        linkTo='projects'
+        linkTo='https://rollercalc.pedrofagundes.com/#/'
         imgName='roller-calc'
         imgAlt='Rollercalc website'
         title='RollerCalc - a RollerCoin calculator'
       />
       <ProjectCard
-        linkTo='projects'
+        linkTo='https://pedrofagundes-preco-campeao.netlify.app/'
         imgName='preco-campeao'
         imgAlt='Preço Campeão website'
         title='Preço Campeão - the best market sales!'
