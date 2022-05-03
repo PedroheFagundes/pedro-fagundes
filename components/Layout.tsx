@@ -7,9 +7,13 @@ const Layout: FC = ({ children }) => {
   return (
     <div className="layout w100vw">
         <Head>
-          <title>Pedro Fagundes - Fullstack Web Developer</title>
-          <meta name="description" content="I am a web devolper and I can build for your project the right website or web application." />
-          <meta name="keywords" content="website development, web developer, web application, fullstack developer, fullstack web developer"></meta>
+          <title>Pedro Fagundes - Web solutions for your business.</title>
+          <meta name="description" content="I am a web developer and I create web solution for you business." />
+          <meta
+            name="keywords"
+            content="website development, web developer, web application, fullstack developer, fullstack web developer,
+            website, site, online menu, menu, cardápio, web solution, online business, web system"
+          />
         </Head>
         <Navbar />
         { children }
