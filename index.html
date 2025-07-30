@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5474022631580710"
-     crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pedro Fagundes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pedro Fagundes' personal website. Artist, developer, and creative mind behind interactive tools and illustrations." />
+  <title>Pedro Fagundes - Official Website</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img.logo {
+      height: 50px;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    .button {
+      background: #0070f3;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #0070f3;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+    }
+  </style>
 </head>
-<body style="display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif;">
-  <div>
-    <h1>Pedro Fagundes</h1>
-    <p><a href="https://www.artstation.com/pedrofagundes">Visit my work</a></p>
-  </div>
+<body>
+
+  <header>
+    <img src="https://i.imgur.com/NzxYEXW.png" alt="Pedro Fagundes Logo" class="logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Hi, I'm Pedro Fagundes</h1>
+      <p>Welcome to my personal site. I'm a digital artist, developer, and creator of tools and visual experiences. I build things with code, design characters, and share everything I learn.</p>
+      <a class="button" href="https://character-ideas-generator.pedrofagundes.com/" target="_blank">🎲 Try the Character Ideas Generator</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I'm Pedro Fagundes, a passionate creative who works at the intersection of technology and art. Whether designing fantasy characters, coding tools for creators, or exploring storytelling through visuals, I love turning ideas into reality. This site is my digital hub — where art, experiments, and side-projects live together.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>My Projects</h2>
+      <ul>
+        <li><strong>Art Portfolio:</strong> Check out my <a href="https://www.artstation.com/pedrofagundes" target="_blank">ArtStation</a> for illustrations, character concepts, and visual design.</li>
+        <li><strong>Character Generator:</strong> A fun little app to generate random fantasy character ideas.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Support My Work</h2>
+      <p>If you like what I do, consider buying me a coffee!</p>
+      <a class="button" href="https://ko-fi.com/pedrofagundes" target="_blank">💖 Support on Ko-fi</a>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+        <form
+          action="https://formspree.io/f/xvgqqoek"
+          method="POST"
+        >
+          <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Pedro Fagundes. All rights reserved.
+  </footer>
+
 </body>
 </html>
